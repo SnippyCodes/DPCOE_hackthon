@@ -1,6 +1,5 @@
 import sqlite3
 
-# --- TIMETABLE DATA (Consolidated and Cleaned) ---
 # Each tuple is (Division, Day, Time, Subject, Location)
 TIMETABLES_DATA = [
     # DIVISION A
@@ -18,9 +17,88 @@ TIMETABLES_DATA = [
     ("DIVISION B", "MONDAY", "2nd Hour (10-11 AM)", "FPL", "Batch-everyone"),
     ("DIVISION B", "MONDAY", "(11-11:15AM)", "Short Break", "Canteen"),
     ("DIVISION B", "MONDAY", "3rd Hour (11:15-12:15 AM)", "PHY", "Everyone"),
-    ("DIVISION B", "MONDAY", "3rd Hour (12:15-1:15 AM)", "M1", "Everyone"),
+    ("DIVISION B", "MONDAY", "4th Hour (12:15-1:15 AM)", "M1", "Everyone"),
     ("DIVISION B", "MONDAY", "1:15-2 PM", "Long Break", "Canteen/Home"),
-   
+    ("DIVISION B", "MONDAY", "5th Hour and 6th Hour (2-4 PM)", "EM", "Batch B1")
+    ("DIVISION B", "MONDAY", "5th Hour and 6th Hour (2-4 PM)", "BEE", "Batch B2")
+    ("DIVISION B", "MONDAY", "5th Hour and 6th Hour (2-4 PM)", "PHY", "Batch B3")
+
+
+
+    #DIVISION C
+    ("DIVISION C", "MONDAY", "1st Hour (9-10 AM)", "PHY", "Batch-everyone"),
+    ("DIVISION C", "MONDAY", "2nd Hour (10-11 AM)", "M1", "Batch-everyone"),
+    ("DIVISION C", "MONDAY", "(11-11:15AM)", "Short Break", "Canteen"),
+    ("DIVISION C", "MONDAY", "3rd Hour and 4th Hour (11:15-1:15)", "Lib/M1", "Batch C1")
+    ("DIVISION C", "MONDAY", "3rd Hour and 4th Hour (11:15-1:15)", "FPL", "Batch C2")
+    ("DIVISION C", "MONDAY", "3rd Hour and 4th Hour  (11:15-1:15)", "PCS", "Batch C3")
+    ("DIVISION C", "MONDAY", "1:15-2 PM", "Long Break", "Canteen/Home"),
+    ("DIVISION C", "MONDAY", "5th Hour (2-3 PM)", "DTIL", "Everyone"),
+    ("DIVISION C", "MONDAY", "6th Hour (3-4 PM)", "BEE", "Everyone"),
+
+
+
+    #DIVISION D
+    ("DIVISION D", "MONDAY", "3rd Hour and 4th Hour (9-11 AM)", "Lib/M1", "Batch D1")
+    ("DIVISION D", "MONDAY", "3rd Hour and 4th Hour (9-11 AM)", "FPL", "Batch D2")
+    ("DIVISION D", "MONDAY", "3rd Hour and 4th Hour  (9-11 AM)", "PCS", "Batch D3")
+    ("DIVISION D", "MONDAY", "(11-11:15AM)", "Short Break", "Canteen"),
+    ("DIVISION D", "MONDAY", "3rd Hour (11:15-12:15 AM)", "EG", "Everyone"),
+    ("DIVISION B", "MONDAY", "4th Hour (12:15-1:15 AM)", "BXE", "Everyone"),
+    ("DIVISION D", "MONDAY", "1:15-2 PM", "Long Break", "Canteen/Home"),
+    ("DIVISION D", "MONDAY", "5th Hour (2-3 PM)", "M1", "Everyone"),
+    ("DIVISION D", "MONDAY", "6th Hour (3-4 PM)", "Extra", "Everyone"),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ]
 
 def setup_database():
